@@ -1,26 +1,32 @@
 extends layout
 
 block content
-  #main-content
-  h1 work
-  p
-    | work what's that?
-  - beatles = ['ringo', 'paul', 'john', 'george']
-  ul
-    each beatle in beatles
-      li #{beatle}
-  - awake = true 
-  - if (awake)
-    p You are awake
-  -else
-    p you are not awake
-
-
-
+  h1 Work
+  p Isn't that a four letter word?
+  p check it out and tell me what
+  section#main-content
+    h2 my work
   aside#side-bar
     h2 links
     ul
       li 
-        a(href='#') 2012-10-06 JavaScript Templating
+        a(href='#') languages that I use
       li 
-        a(href='#') 2012-03-04 ExtJS
+        a(href='#') frameworks that I know
+
+
+  #work
+    ul
+      li.view-box
+      li.view-box
+      li.view-box
+      li.view-box
+      li.view-box
+      li.view-box
+      li.view-box
+      li.view-box
+      li.view-box
+      li.view-box
+      li.view-box
+      li.view-box
+
