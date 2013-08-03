@@ -7,3 +7,4 @@ built on top of Express and Nodejs with mongo as a no-sql solution
 
 ## Leaflet
  I'm using leaflet, a mobile friendly javascript map solution
+  leaflet is really nice to look at, and I'm happy at with first impressions.
