@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  #main-content
+  h1 work
+  p
+    | work what's that?
+  - beatles = ['ringo', 'paul', 'john', 'george']
+  ul
+    each beatle in beatles
+      li #{beatle}
+  - awake = true 
+  - if (awake)
+    p You are awake
+  -else
+    p you are not awake
+
+
+
+  aside#side-bar
+    h2 links
+    ul
+      li 
+        a(href='#') 2012-10-06 JavaScript Templating
+      li 
+        a(href='#') 2012-03-04 ExtJS

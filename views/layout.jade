@@ -1,0 +1,32 @@
+doctype 5
+html
+  head
+    title= title
+    link(rel='stylesheet', href='http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/jquery/2.0.3/jquery.min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js')
+    script(src='//cdnjs.cloudflare.com/ajax/libs/backbone.marionette/1.0.4-bundled/backbone.marionette.min.js')
+    script(src='http://cdn.leafletjs.com/leaflet-0.6.4/leaflet.js')
+
+  body
+    #wrap
+      header
+        nav
+          ul
+            li
+              a(href='/') home
+            li
+              a(href='/about') about
+            li
+              a(href='/work') work
+            li
+              a(href='/contact') contact
+        h1 Function Rocket
+      block content
+
+
+      footer
+        p
+          | Footer area here copyright &copy; 2013
