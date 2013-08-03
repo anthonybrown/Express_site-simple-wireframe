@@ -93,25 +93,25 @@ form {
 }
 #work {
   overflow: hidden;
-  height: 300px;
+  height: 320px;
   width: 100%;
   clear: both;
-  background-color: #cfcfcf;
+  background-color: rgba(71,70,70,0.07);
 }
 #work ul {
   list-style: none;
 }
 #work .view-box {
   width: 170px;
-  height: 100px;
+  height: 115px;
   background-color: #858585;
   padding: 0;
-  margin: 1.6em;
+  margin: 1.8em 2.1em 0 2.1em;
   float: left;
 }
 #work .view-box:hover {
   width: 160px;
-  height: 90px;
+  height: 100px;
   border: 5px solid #fafafa;
 }
 footer {
