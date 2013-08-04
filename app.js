@@ -23,34 +23,41 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+
+// I guess this is my routes section :)
 app.get('/', routes.index);
 
 app.get('/users/:id', function (req, res) {
+  'use strict';
   res.send('show content for user id: '+ req.params.id);
 });
 
 app.post('/', function (req, res) {
+  'use strict';
   res.send(req.body);
 });
 
 app.get('/about', function (req, res) {
+  'use strict';
  res.render('about', {
   title: 'About'
- }); 
+ });
 });
 
 app.get('/contact', function (req, res) {
+  'use strict';
  res.render('contact', {
   title: 'Contact'
- }); 
+ });
 });
 app.get('/work', function (req, res) {
+  'use strict';
  res.render('work', {
   title: 'Work'
- }); 
+ });
 });
 
-
+// user list
 app.get('/users', user.list);
 
 http.createServer(app).listen(app.get('port'), function(){
