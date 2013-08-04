@@ -93,9 +93,8 @@ form {
 }
 #work {
   overflow: hidden;
-  height: 320px;
-  width: 100%;
-  clear: both;
+  height: 520px;
+  width: 93%;
   background-color: rgba(71,70,70,0.07);
 }
 #work ul {
@@ -106,13 +105,16 @@ form {
   height: 115px;
   background-color: #858585;
   padding: 0;
-  margin: 1.8em 2.1em 0 2.1em;
+  margin: 1.8em 2em 0 2em;
   float: left;
+  clear: none;
 }
 #work .view-box:hover {
+  overflow: display;
+/*display block*/
   width: 160px;
   height: 100px;
-  border: 5px solid #fafafa;
+  border: 3px inset #fafafa;
 }
 footer {
   width: 100%;
