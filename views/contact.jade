@@ -3,16 +3,16 @@ extends layout
 block content
   h1 Contact me
 
-  form
+  form(method='post', action='/')
     table
       tr
         td
           label(for='name') name
-          input(type='text', name='name', id='name')
+          input(type='text', name='user[first_name]', id='name')
       tr
         td
           label(for='email') email
-          input(type='email', id='email', name='email')
+          input(type='email', id='email', name='user[email]')
       tr
         td
           label(for='msg') message
