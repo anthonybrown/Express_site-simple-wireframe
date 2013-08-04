@@ -1,3 +1,4 @@
+
 extends layout
 
 block content
@@ -6,6 +7,17 @@ block content
   p check it out and tell me what
   section#main-content
     h2 design
+    h3 Mixins yo 
+      mixin users(users)
+        ul
+          each user in users
+            li= user
+      - users = ["Tanya", "Sue", "Rachel"]
+      mixin users(users)
+      - more_users = ['Mike', 'Mark', 'Paul', 'Peter']
+      mixin users(more_users)
+            
+
   aside#side-bar
     h2 links
     ul
@@ -35,10 +47,16 @@ block content
       li.view-box
       li.view-box
       li.view-box
+    ul
+      li.view-box
+      li.view-box
+      li.view-box
+      li.view-box
+  
+ #addSome
 
       - awake = true
       - if (awake)
         p you are awake
       - else
         p you are not awake
-
