@@ -13,20 +13,32 @@ block content
         a(href='#') languages that I use
       li 
         a(href='#') frameworks that I know
+      h3 The Beatles
+      - beatles = ['ringo', 'john', 'paul', 'george'];
+      ul
+        each beatle in beatles
+          li #{beatle}
 
+      - obj = {first_name: 'George', surname: 'Ornbo'}
+      - each val, key in obj
+        li #{key}: #{val}
 
+    
   #work
     ul
       li.view-box
       li.view-box
       li.view-box
       li.view-box
+    ul
       li.view-box
       li.view-box
       li.view-box
       li.view-box
-      li.view-box
-      li.view-box
-      li.view-box
-      li.view-box
+
+      - awake = true
+      - if (awake)
+        p you are awake
+      - else
+        p you are not awake
 
