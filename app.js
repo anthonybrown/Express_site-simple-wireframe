@@ -50,6 +50,7 @@ app.get('/contact', function (req, res) {
   title: 'Contact'
  });
 });
+
 app.get('/work', function (req, res) {
   'use strict';
  res.render('work', {
@@ -60,6 +61,7 @@ app.get('/work', function (req, res) {
 // user list
 app.get('/users', user.list);
 
+//  create and listen for the server
 http.createServer(app).listen(app.get('port'), function(){
   'use strict';
   console.log('Express server listening on port ' + app.get('port'));

@@ -6,17 +6,17 @@ block content
   p Isn't that a four letter word?
   p check it out and tell me what
   section#main-content
-    h2 design
+    h2 jade is awesome 
     h3 Mixins yo 
-      mixin users(users)
+      mixin langs(langs)
         ul
-          each user in users
-            li= user
-      - users = ["Tanya", "Sue", "Rachel"]
-      mixin users(users)
-      - more_users = ['Mike', 'Mark', 'Paul', 'Peter']
-      mixin users(more_users)
-            
+          each lang in langs
+            li= lang
+      - langs = ["JavaScript", "Python", "Ruby"]
+      mixin langs(langs)
+      - more_langs = ['JavaScript', 'Python', 'Ruby', 'PHP']
+      mixin langs(more_langs)
+
 
   aside#side-bar
     h2 links
@@ -25,6 +25,10 @@ block content
         a(href='#') languages that I use
       li 
         a(href='#') frameworks that I know
+      li 
+        a(href='#') more languages that I know 
+      li 
+        a(href='#') node applications to work on
       h3 The Beatles
       - beatles = ['ringo', 'john', 'paul', 'george'];
       ul
@@ -35,6 +39,11 @@ block content
       - each val, key in obj
         li #{key}: #{val}
 
+     - awake = true
+     - if (awake)
+       h2 you are awake
+     - else
+       h2 you are not awake
     
   #work
     ul
@@ -55,8 +64,3 @@ block content
   
  #addSome
 
-      - awake = true
-      - if (awake)
-        p you are awake
-      - else
-        p you are not awake
